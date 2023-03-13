@@ -38,7 +38,9 @@ function cadastrarCard(event) {
     </div>
     
     `
-    
+    userTituloRef.value = '';
+    userUrlRef.value = '';
+    userDescricaoRef.value = '';
 }
 
 userTituloRef.addEventListener('keyup', (event) => validarTitulo(event.target.value));
