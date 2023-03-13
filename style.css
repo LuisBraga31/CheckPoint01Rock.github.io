@@ -114,31 +114,38 @@ body {
 .card {
     padding: 0px 20px;
     background-color: rgb(133, 31, 31);
-    width: 20vw;
-    height: 700px; 
+    width: 360px;
+    height: 580px; 
 
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 8px;
 
-}
-
-.card img {
-    width: 20vw;
-    height: 45vh;
 }
 
 .card h3 {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    letter-spacing: 3px;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
 }
 
 .card p {
     text-align: center;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
 
