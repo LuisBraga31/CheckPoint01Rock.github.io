@@ -21,6 +21,10 @@ body {
     padding: 40px;
 }
 
+.gif img {
+    width: 450px;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
@@ -175,12 +179,16 @@ body {
         font-size: 16px;
     }
 
-    .formularioButton input {
+    .formularioButton button {
         width: 15vw;
     }
 
     .containerTitulo h2 {
         font-size: 35px;
+    }
+
+    .gif {
+        display: none;
     }
 
 }
@@ -198,7 +206,7 @@ body {
         font-size: 14px;
     }
 
-    .formularioButton input {
+    .formularioButton button {
         width: 25vw;
         padding: 5px;
     }
@@ -206,6 +214,10 @@ body {
     .containerTitulo h2 {
         font-size: 22px;
         margin: 0 20px;
+    }
+
+    .gif {
+        display: none;
     }
 
 }
