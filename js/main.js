@@ -25,6 +25,20 @@ function validarDescricao (descricao) {
     userData.descricao = descricao;
 }
 
+function validateInput (input) {
+
+    const inputValid = input.checkValidity();
+    const elementFatherRef = input.parentElement;
+
+    if (inputValid) {
+        elementFatherRef.classList.remove('error');
+    } else {
+        elementFatherRef.classList.add('error');
+    }
+
+}
+
+
 function cadastrarCard(event) {
 
     event.preventDefault();
@@ -44,7 +58,12 @@ function cadastrarCard(event) {
 }
 
 userTituloRef.addEventListener('keyup', (event) => validarTitulo(event.target.value));
+userTituloRef.addEventListener('keyup', () => validateInput(userTituloRef));
+
 userUrlRef.addEventListener('keyup', (event) => validarUrl(event.target.value));
+userUrlRef.addEventListener('keyup', () => validateInput(userUrlRef));
+
 userDescricaoRef.addEventListener('keyup', (event) => validarDescricao(event.target.value));
+userDescricaoRef.addEventListener('keyup', () => validateInput(userDescricaoRef));
 
 cadastroButtonRef.addEventListener('click', (event) => cadastrarCard(event));

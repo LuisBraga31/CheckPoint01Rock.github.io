@@ -43,10 +43,11 @@ body {
 .formularioItens {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
-.formularioItens > input {
+.formularioItens div input {
+    width: 100%;
     border: none;
     background-color: #1f1f1f;
     color: white;
@@ -55,13 +56,31 @@ body {
     font-size: 16px;
 }
 
-.formularioItens textarea {
+.formularioItens div textarea {
+    width: 100%;
     border: none;
     background-color: #1f1f1f;
     color: white;
     padding: 8px;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.formularioItens div small {
+    display: none;
+}
+
+.formularioItens div.error input {
+    border: 1px solid red;
+}
+
+.formularioItens div.error textarea {
+    border: 1px solid red;
+}
+
+.formularioItens div.error small {
+    color: red;
+    display: block;
 }
 
 .formularioButton {
@@ -70,20 +89,13 @@ body {
     padding-top: 10px;
 }
 
-.formularioButton input {
+.formularioButton button {
     padding: 8px;
     width: 10vw;
     border-radius: 5px;
     font-size: 16px;
-    color: white;
     border: none;
-    background-color: rgb(128, 15, 15);
     cursor: pointer;
-}
-
-.formularioButton input:hover {
-    background-color: rgb(210, 26, 26);
-    transform: scale(1.1);
 }
 
 /* DIV - Titulo dos Cards */

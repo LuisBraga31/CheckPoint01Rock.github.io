@@ -22,12 +22,26 @@
                 <h3> Adicione sua Banda Favorita ! </h3>
                 
                 <form class="formularioItens">
-                    <input type="text" placeholder="Título" id="tituloCard" required>
-                    <input type="text" placeholder="Url" id="urlCard" required>
-                    <textarea placeholder="Descrição" cols="25" rows="5" id="descricaoCard" required></textarea> 
-                        <div class="formularioButton">
-                            <input type="submit" value="Cadastrar" id="cadastroButton">
-                        </div> 
+                    
+                    <div>
+                        <input type="text" placeholder="Título" id="tituloCard" required minlength="4">
+                        <small> Preencha o título corretamente </small>
+                    </div>
+                    
+                    <div>
+                        <input type="url" placeholder="Url" id="urlCard" required>
+                        <small> Preencha a url corretamente </small>
+                    </div>
+
+                    <div>
+                        <textarea placeholder="Descrição" cols="25" rows="5" id="descricaoCard" required minlength="4" maxlength="405"></textarea> 
+                        <small> Preencha a descrição corretamente </small>
+                    </div>
+
+                    <div class="formularioButton">
+                        <button type="submit" id="cadastroButton" > Cadastrar </button>
+                    </div> 
+
                 </form>
 
             </div>
@@ -50,7 +64,7 @@
 
     </main>
     
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 
 </body>
 
