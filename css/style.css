@@ -224,7 +224,13 @@ h4 {
 }
 
 /* Versão TABLET */
+@media(max-width: 1136px){
 
+    .container-footer {
+        gap: 80px;
+    }
+
+}
 @media(max-width: 900px){
 
     .formulario {
@@ -245,8 +251,12 @@ h4 {
         font-size: 35px;
     }
 
-    .gif {
+    .gif  {
         display: none;
+    }
+
+    .container-footer {
+        gap: 20px;
     }
 
 }
@@ -278,6 +288,11 @@ h4 {
 
     .gif {
         display: none;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        gap: 40px;
     }
 
 }
